@@ -8,3 +8,4 @@ print((20>10 or 5>4))
 # not
 print(not(5>4))#false
 # reverse result
+#
