@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Doctor - Farmer Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #d4fc79, #96e6a1);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 90%;
+      max-width: 450px;
+      animation: fadeIn 1s ease-in;
+    }
+    h1 {
+      color: #2e7d32;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .upload-box {
+      border: 2px dashed #4caf50;
+      padding: 30px;
+      border-radius: 15px;
+      cursor: pointer;
+      background: #f9fff9;
+      transition: 0.3s;
+    }
+    .upload-box:hover {
+      background: #e8f5e9;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    .btn {
+      margin-top: 20px;
+      background: #4caf50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+    }
+    .btn:hover {
+      background: #388e3c;
+    }
+    .result-box {
+      margin-top: 25px;
+      padding: 20px;
+      border-radius: 15px;
+      background: #f1f8e9;
+      display: none;
+      text-align: left;
+    }
+    .result-box h2 {
+      color: #2e7d32;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .result-box p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Crop Doctor</h1>
+    <label class="upload-box" for="fileInput">
+      <p>📷 Upload Crop Photo</p>
+      <input type="file" id="fileInput" accept="image/*">
+    </label>
+    <button class="btn" onclick="showResult()">Analyze Photo</button>
+
+    <div class="result-box" id="resultBox">
+      <h2>Diagnosis Result</h2>
+      <p><strong>Disease:</strong> Leaf Blight</p>
+      <p><strong>Prevention:</strong> Spray Mancozeb 2g/L water</p>
+    </div>
+  </div>
+
+  <script>
+    function showResult() {
+      document.getElementById("resultBox").style.display = "block";
+    }
+  </script>
+</body>
+</html>

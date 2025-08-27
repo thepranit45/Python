@@ -1,0 +1,8 @@
+
+# - **Addition (+)**: Adds two numbers.
+# - **Subtraction (-)**: Subtracts the right operand from the left operand.
+# - **Multiplication (*)**: Multiplies two numbers.
+# - **Division (/)**: Divides the left operand by the right operand (returns float).
+# - **Floor Division (//)**: Divides and returns the integer part only.
+# - **Modulus (%)**: Returns the remainder of division.
+# - **Exponentiation (**)**: Raises the left operand to the power of the right operand.
